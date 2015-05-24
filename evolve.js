@@ -103,13 +103,3 @@ var remove = function(array) {
   array.sort(function(a,b) {return fitness(a, target) < fitness(b, target);});
   array.pop();
 };
-
-
-
-
-// Ways to mate - 
-
-// create empty array of length target
-// for first parent, iterate over chars and if fitness < 5, add to child array
-//   for second parent, iterator over chars and if fitness < 5 AND value in array is empty, add to array
-//for 
