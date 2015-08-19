@@ -79,7 +79,7 @@ var evolve = function(target) {
   while (best !== target) {
   	mate(population);
   	remove(population);
-  	// mutate(population);
+  	mutate(population);
   	best = population.sort(function(a,b) {return fitness(a) < fitness(b)})[0];
   	console.log(best + " " + count + " cycle.");
   	count++ 
