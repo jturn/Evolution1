@@ -62,7 +62,7 @@ var mate = function() {
   
   population.push(child);
 };
-
+//Sort the population and remove the target with lowest FitLevel
 var remove = function() {
   population.sort(function(a,b) {return fitness(a, target) - fitness(b, target);});
   population.pop();
